@@ -6,7 +6,7 @@ python voice recognition system
                                               Objective
 
  General Objective:
-The general objective of this project is to develop a method to implement voice recognition system using phython. 
+The general objective of this project is to develop a method to implement a voice recognition system using python. 
 
  Specific Objectives:
 1. Investigate the most commonly used techniques and parameters for voice recognition. 
@@ -28,7 +28,7 @@ Simulation and discussion
 
 Step 1: Installing and importing the necessary libraries
                   
-                  
+ ```                 
 import sys
 import pyttsx3 #pip install pyttsx3
 import speech_recognition as sr #pip install speechRecognition
@@ -37,17 +37,17 @@ import wikipedia #pip install wikipedia
 import webbrowser
 import os
 import random
- 
+ ```
 
 
  Step 2:  Getting a reference to a pyttsx3.Engine instance
 
   An application invokes the pyttsx3.init() factory function to get a reference to a pyttsx3Engine instance. During construction, the engine initializes a pyttsx3.driver.DriverProxy object responsible for loading a speech engine driver implementation from the pyttsx3.drivers module. After construction, an application uses the engine object to register and unregister event callbacks; produce and stop speech; get and set speech engine properties; and start and stop event loops.
-
+```
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
-
+```
 
  Step 3:  defining different types of functions necessary for the implementation.
 
@@ -61,7 +61,7 @@ performCommand():This function  performs the required thing after it takes the q
 sendMessage(value): This function sends the text to telegram group that is given as an argument.
 randomGenerator():This function generates random integer between 0 and 4 inclusively , and returns the string version of it.
 Step 4: The built in method ***”main”*** will finish our steps as it is an entry point of our python code when it starts running.
-
+```
 if __name__ == "__main__":
     wishMe()
     while True:
@@ -70,11 +70,11 @@ if __name__ == "__main__":
 
         # Logic for executing tasks based on query
         performCommand(query)
-
+```
 
 Conclusion
 
-In conclusion, voice recognition technology has come a long way in recent years and has become an increasingly important tool in our daily lives. From our phones and computers to our cars and home appliances, voice recognition allows us to interact with technology in a more natural and intuitive way. However, while the technology has made great strides, there is still much work to be done in terms of accuracy, accessibility, and inclusivity.
+In conclusion, voice recognition technology has come a long way in recent years and has become an increasingly important tool in our daily lives. From our phones and computers to our cars and home appliances, voice recognition allows us to interact with technology more naturally and intuitively. However, while the technology has made great strides, there is still much work to be done in terms of accuracy, accessibility, and inclusivity.
 
 One of the main challenges facing voice recognition is overcoming the limitations of current algorithms and models. As machine learning and artificial intelligence continue to evolve, we can expect to see significant improvements in accuracy and reliability. In addition, efforts to improve accessibility and inclusivity are crucial to ensuring that everyone can benefit from this technology, regardless of age, language, or ability.
 
