@@ -70,11 +70,9 @@ if __name__ == "__main__":
 
         # Logic for executing tasks based on query
         performCommand(query)
-  
 
 
-
-                            Conclusion
+Conclusion
 
 In conclusion, voice recognition technology has come a long way in recent years and has become an increasingly important tool in our daily lives. From our phones and computers to our cars and home appliances, voice recognition allows us to interact with technology in a more natural and intuitive way. However, while the technology has made great strides, there is still much work to be done in terms of accuracy, accessibility, and inclusivity.
 
